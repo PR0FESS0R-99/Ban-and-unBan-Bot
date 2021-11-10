@@ -59,7 +59,7 @@ async def unban(bot, message):
         userid = message.from_user.id
         if userid in admins:
             user_to_unban = message.reply_to_message.from_user.id
-            if user_to_ban in admins:
+            if user_to_uban in admins:
                 await message.reply(text="Think he is Admin, Can't Ban Admins")
             else:
                 try:
