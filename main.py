@@ -10,8 +10,8 @@ Pr0fess0r_99 = Client(
     api_hash=os.environ["API_HASH"],
 )
 
-@Pr0fess0r_99.on_message(filters.command(["ban"]))
-async def ban(bot, message):
+@Pr0fess0r_99.on_message(filters.command(["start"]))
+async def start(bot, message):
     await message.reply_text(f"""Hy {message.from_user.mention}\nIam [Ban And UnBan](https://github.com/PR0FESS0R-99/Ban-and-UnBan-Bot) Telegram Bot""")
 
 @Pr0fess0r_99.on_message(filters.command(["ban"]))
